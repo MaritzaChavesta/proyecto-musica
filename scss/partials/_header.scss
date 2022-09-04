@@ -1,0 +1,187 @@
+header{
+    width: 85%;
+    height: 95%;
+  /*    border: 1px solid black;  */
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+    .menu{
+        position: relative;
+        width: 25%;
+        height: 90%;
+ /*      border: 1px solid red;  */
+        background-color: #662323;
+       
+
+        img{
+            margin: 20px 60px 0px 60px;
+        }
+        h1{
+            font-size: 24px;
+            margin: 15px 0px 0px 20px;
+            font-weight: 500;
+            color: white;
+        }
+        &__playlist{
+            margin: 30px 0px 0px 20px;
+                h4{
+                    font-size: 16px;
+                    font-weight: 400;
+                    padding-bottom: 10px;
+                    color: #acb2c3;
+                    cursor: pointer;
+                    display: flex;
+                    align-items: center;
+                    transition: .3s linear; 
+                }
+                h4:hover{
+                    color: white;
+                }
+                h4 span{
+                    position: relative;
+                    margin-right: 35px;
+                }
+                h4 span::before{
+                    content: '';
+                    position: absolute;
+                    width: 8px;
+                    height: 8px;
+                    border: 2px solid #acb2c3;
+                    border-radius: 50%;
+                    top: -4px;
+                    transition: .3s linear;
+                }
+                h4:hover span::before{
+                    border: 2px solid white;
+                }
+                h4 .bi{
+                    display: none;
+                }
+                .active{
+                    color:#EB5757;
+                }
+                .active span{
+                    display: none;
+                }
+                .active .bi{
+                    display: flex;
+                    margin-right: 20px;
+                }
+
+               
+        }
+        &__song{
+            width: 100%;
+            height: 560px;
+          /*  border: 1px solid white;  */
+            color: white;
+            margin-top: 40px; 
+            li:hover{
+                background: #EB5757;
+            }
+            
+            li{
+                padding: 10px 0px 5px 20px;
+                list-style-type: none;
+
+                position: relative;
+                display: flex;
+                align-items: center;
+                margin-bottom: 10px;
+                cursor: pointer;
+                transition: .3s linear;
+              
+
+                span{
+                    font-size: 14px;
+                    font-weight: 600;
+                    color: #acb2c3;
+                }
+
+                img{
+                    width: 36px;
+                    height: 36px;
+                    margin-left: 25px;
+                    margin-top: 10px;
+                }
+                h5{
+                    font-size: 14px;
+                    margin-left: 15px;
+
+                    .subtitulo{
+                        font-size: 11px;
+                        color: #acb2c3;
+                    }
+                }
+            }
+
+            .bi{
+                position: absolute;
+                right: 25px;
+                top: 15px;
+                font-size: 18px;
+            }
+           
+         
+        }
+    }
+  
+    .song{
+        position: relative;
+        width: 75%;
+        height: 90%;
+       /*  border: 1px solid red; */
+       background-color: white;
+    }
+    .play{
+        width: 100%;
+        height: 10%;
+        background: #EB5757;
+        box-shadow: 0px 3px 8px black;
+        
+    }
+   
+}
+
+
+
+
+
+/* .header{
+    left: 0;
+    top: 0;
+    background: #662323;
+    width: 330px;
+    height: 100%; 
+    font-family:Quicksand;
+    z-index: 4;
+    position: fixed;
+}
+
+ .nav{
+    padding: 50px 30px;
+    img{
+        width: 250px;
+        display: block;
+        padding-bottom: 30px; 
+    }
+    &__enlaces{
+        color: white;
+        &__dos{
+            padding-top: 30px;
+        }
+    li{
+        padding-top: 4px;
+        a{
+            color: white;
+        }
+    }
+    h2{
+        font-size: 22px;
+        font-weight: 700,bold;
+        color: white;
+    }
+ }
+}
+ 
+ */

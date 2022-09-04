@@ -1,0 +1,153 @@
+
+ ///////////////////////////////////////////////////////////  
+
+ .cart-modal-overlay {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    transform: translateY(-200%);
+    transition: .5s ease-out;
+    z-index: 10;
+  }
+  .cart-modal-overlay.open {
+    transform: translateY(0%);
+  }
+  .cart-modal {
+    height: 100vh;
+    width: 100%;
+    background-color: white;
+    float: right;
+    overflow: scroll;
+    overflow-x: hidden;
+  }
+  
+  #close-btn {
+    font-size: 2rem;
+    float: right;
+    margin: 2em 3em ;
+    color:#e86060;
+    cursor: pointer;
+  } 
+
+.warnings{
+    width: 200px;
+    text-align: center;
+    margin: auto;
+    color: #e86060;
+    padding-top: 20px;
+}
+/* 
+.usuario{
+    background: #662323;
+    width: 100%;
+    height: 12vh; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+} */
+
+/*****************FORMULARIO*****************/
+ .form{
+    padding: 13rem 2rem 10rem 2rem;
+    font-family:Quicksand;
+    &__cuenta{
+        max-width: 580px;
+        height: 515px;
+        margin: 0 auto;
+      
+        &__titulo{
+            letter-spacing: 0.01em;
+            font-size: 18px;
+            font-weight: bold; 
+            text-align: center;
+            padding: 2rem 2rem 1rem 2rem;   
+        }
+
+        &__registrate{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            &__texto{
+                font-size:16px;
+                font-weight: 300;
+            }
+            &__link a{
+                letter-spacing: 0.11px;
+                text-decoration-line: underline;
+                font-weight: 600;
+                font-size: 16px;
+                color: #e86060;
+                text-align: center;
+                padding: 0 1rem;
+            }
+        }
+    }
+
+    
+}
+
+.formulario{
+    font-family:Quicksand;
+    width: 496px;
+    height: 48px;
+    margin: 0 auto; 
+    letter-spacing: 0.11px;
+    font-size:14px ;
+    font-weight: normal; 
+    &__correo{
+        padding: 1rem 0;
+        font-size: 16px;
+        label{
+            padding: 0.5rem 0rem;
+            display: block;
+        }
+        input{
+            width: 100%;
+            height: 48px;
+            border: 1px solid #D9D9D9
+        }  
+    }
+    &__contraseña{
+        padding: 1rem 0;
+        font-size: 16px;
+        label{
+            padding: 0.5rem 0rem;
+            display: block;
+        }
+        input{
+            width: 100%;
+            height: 48px;
+            border: 1px solid #D9D9D9
+        }  
+
+    }
+    &__olvidaste{
+        text-align: center;
+        letter-spacing: 0.11px;
+        text-decoration-line: underline;
+        font-size:16px ;
+        padding: 1rem 0 2rem 0; 
+    }
+}
+.button__formulario{
+    font-family:Quicksand;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &__btn{
+        background-color: #e86060;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        font-size:14px;
+        max-width: 100%;
+        padding: 1rem  2rem;
+        text-align: center;
+        cursor: pointer; 
+        color: white;
+        
+        border: none;
+    }
+} 
+
+

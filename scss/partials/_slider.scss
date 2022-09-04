@@ -1,0 +1,116 @@
+ul.slick-dots {
+    padding: 2.5rem 0rem;
+    margin: 0rem 8rem;
+    color: white;
+}
+
+.playlist{
+    display: flex;
+    width: 90%;
+    height: 30%;
+    margin: auto;
+    padding: 2rem 0rem;
+   
+    &__formas{
+        display: flex;
+          &__uno{
+              position: relative;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+            
+          &__btn{
+                  position: absolute;
+                  top: 35%;
+                  left: 12%;
+                  cursor: pointer;
+                  
+                  .bi{
+                        color: white;
+                        font-size: 55px;
+                       
+                  }
+              } 
+          }
+      
+          &__dos{
+              position: relative;
+              &__texto{
+                  position: absolute;
+                  top: 15%;
+                  left: 5%;
+              
+                  font-family: Quicksand ;
+                  color: #fff;
+                  text-align:justify; 
+                  width: 90%;
+      
+                  h5{
+                      font-weight: 700;
+                      font-size: 22px; 
+                      margin: 0; 
+                  }
+      
+                  &__parrafos{
+                      display: flex;
+                      margin: 0;
+                      gap: 1rem;
+                      padding-top: 1rem;
+                  }
+      
+                  &__cont{
+                      font-weight: 400;
+                      font-size: 14px;
+                      line-height: 20px;
+                      padding: 1rem 0rem;
+                  }
+      
+                  .p1{
+                      margin: 0;
+                  }
+                  .p2{
+                      font-weight: 400;
+                    font-size: 12px;
+                    line-height: 20px; 
+                    color: #662323; 
+                    margin: 0;
+                  }
+      
+                  
+              }
+      
+              &__btn{
+                  position: absolute;
+                  top: 75%;
+                  left: 5%;
+                   &__uno{
+      
+                      border: none;
+                      background: #E86060;
+                      border-radius: 20px;
+                      padding: 0.80rem 1.5rem;
+                      color: white;
+                      font-size: 14px;
+                      cursor: pointer;
+                    
+                  }
+      
+                  &__dos{
+                      margin-left: 1rem;
+                      border: 1px solid #E86060;
+                      background: none;
+                      border-radius: 20px;
+                      padding: 0.80rem 2.5rem;
+                      color:  #E86060;
+                      font-size: 14px; 
+                      cursor: pointer;
+                  }
+                  
+              }
+      
+              
+          }
+      }
+      
+}
+ 
